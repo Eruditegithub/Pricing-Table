@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.body {
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eee;
+}
+.pricing-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.monthly {
+    padding-right: 5px;
+}
+.annually {
+    padding-left: 5px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 26px;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+/*input:checked + .slider {
+    background-color: #da4357;
+}*/
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+.button {
+    background-color: #d2d2d2;
+    width: 200px;
+    height: 100px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+.education {
+    font-size: 30px;
+    font-weight: bold;
+    color: #da4357;
+}
+
+.learning {
+    font-size: 30px;
+    font-weight: bold;
+    color: #da4357;
+    margin-left: 0.5em;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    width: 800px;
+    margin: auto;
+    margin-top: 15px;
+}
+.single-price {
+    width: 27%;
+    background: #262626;
+    float: left;
+    margin-top: 2%;
+    text-align: center;
+    transition: 0.9s;
+    margin: 10px;
+}
+.price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #da4357;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+.single-price h1 {
+    font-size: 18px;
+    color: #FFF;
+    line-height: 3;
+    text-transform: uppercase;
+}
+.price h2 {
+    font-size: 38px;
+    color: #FFF;
+}
+.deals h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFF;
+    line-height: 1;
+    text-align: left;
+    padding: 0 0 5px 10px;
+}
+.single-price:hover {
+    background: #da4357;
+    color: #FFF;
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
+}
+a {
+    background: #da4357;
+    color: #FFF;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+.single-price:hover a {
+    background: #262626;
+    color: #FFF;
+}
